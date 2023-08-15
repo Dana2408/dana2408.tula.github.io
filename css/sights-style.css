@@ -1,0 +1,136 @@
+.accordion-block{
+    border: 1px solid #000;
+    border-left: none;
+    border-right: none;
+    padding: 15px;
+  
+}
+.block:hover .descr{
+    display:block;
+    position:absolute;
+    top:120px;
+    z-index:9999;
+    width:400px;
+}
+
+.accordion-title{
+    font-size: 34px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    font-family: "PlayfairDisplay";
+}
+
+.subscribe{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.picture-block-1 img{
+    width: 550px;
+    height: 350px ;
+    border-radius: 5px;
+    
+
+}
+
+.about{
+    width: 50%;
+    font-size: 20px;
+    align-items: center;
+    line-height: 1.5;
+    border: 10px solid #ececec;
+    border-radius: 50px;
+    background: rgb(218, 218, 218);
+    padding: 10px;
+}
+
+@media (min-width:992px) and (max-width:1240px){
+    .picture-block-1 img{
+        width: 350px;
+        height: 250px ;
+    
+    }
+    .accordion-title{
+        font-size: 30px;
+    }
+    .about{
+        width: 50%;
+        padding: 10px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .accordion-title{
+        font-size: 26px;
+       
+    }
+    .picture-block-1 img{
+        width: 230px;
+        height: 150px ;
+    }
+    .about{
+        font-size: 16px;
+        width: 60%;
+    }
+    .subscribe{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+  
+   
+    
+   
+}
+
+@media (min-width:576px) and (max-width:767px){
+    .accordion-title{
+        font-size: 24px;
+       
+    }
+    .picture-block-1 img{
+        width: 350px;
+        height: 200px ;
+        display: block;
+        margin: 5px auto;
+    
+    }
+    .subscribe{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .about{
+        font-size: 16px;
+        width: 100%;
+    }
+  
+    
+}
+
+@media (min-width:320px) and (max-width:576px){
+   
+    .accordion-title{
+        font-size: 20px;
+       
+    }
+    .picture-block-1 img{
+        width: 290px;
+        height: 180px ;
+        display: block;
+        margin: 5px auto;
+    
+    }
+    .subscribe{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .about{
+        font-size: 15px;
+        width: 100%;
+        line-height: 1.2;
+    }
+   
+}
